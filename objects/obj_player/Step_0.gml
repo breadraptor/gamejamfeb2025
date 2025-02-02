@@ -1,5 +1,3 @@
-trace("hi", obj_gamecontroller._STATE)
-
 if (obj_gamecontroller._STATE = states.free) {
 	var bbox_side;
 
