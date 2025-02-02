@@ -13,6 +13,8 @@ if (obj_gamecontroller._STATE = states.free) {
 			if !instance_exists(obj_keypad){
 				instance_create_layer(x, y, "Key_Pad_Instance", obj_keypad)
 			}
+		} else {
+			obj_DialogueMaster.dialogue_id = 1;
 		}
 	}
 

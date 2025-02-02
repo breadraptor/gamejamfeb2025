@@ -1,12 +1,11 @@
 {
   "$GMObject":"",
-  "%Name":"obj_Dialogue_Text",
+  "%Name":"obj_doll_dialogue",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":64,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_Dialogue_Text",
+  "name":"obj_doll_dialogue",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -30,7 +29,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_doll_dialogue",
+    "path":"sprites/spr_doll_dialogue/spr_doll_dialogue.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

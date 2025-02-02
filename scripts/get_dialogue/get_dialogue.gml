@@ -4,6 +4,15 @@ function get_dialogue(convoId, index){
 	switch (convoId) {
 		case -1:
 			return "Got bad tile id";
+		case 1:
+			switch(index) {
+				case 0:
+					return "Hey you! You shouldn't be awake...";
+				case 1:
+					return "Don't touch anything and just wait for Bozo to come back!!";
+				default:
+					return "";
+			}
 		case 7:
 			switch(index) {
 				case 0:
@@ -14,18 +23,6 @@ function get_dialogue(convoId, index){
 					return "I really don't know what else to say!";
 				default:
 					return "";
-			}
-		case 10:
-			switch(index) {
-				case 0:
-					return "How are these still alive?";
-				case 1:
-					return "Here, fishie...";
-				case 2:
-					return ".....!"
-				case 3:
-					return "It lunged at me.";
-				default: return "";
 			}
 	}
 	trace("*Aladdin voice* It broke.");
