@@ -17,7 +17,7 @@ if (obj_gamecontroller._STATE = states.free) {
 	}
 
 	//Interact code end
-	
+	/*
 	if (keyboard_check_released(vk_space)) {
 		var mid = bbox_bottom - (bbox_bottom - bbox_top) / 2;
 		var split = bbox_right - (bbox_right - bbox_left) / 2;
@@ -51,7 +51,7 @@ if (obj_gamecontroller._STATE = states.free) {
 			}
 		}
 		trace(interaction_tile_id);
-	}
+	} */
 
 	key_right = keyboard_check(ord("D"));
 	key_left = keyboard_check(ord("A"));
@@ -60,33 +60,16 @@ if (obj_gamecontroller._STATE = states.free) {
 
 	hsp = (key_right - key_left) * 4;
 	vsp = (key_down - key_up) * 4;
-
-	// Horizontal collision
-	if (hsp > 0) bbox_side = bbox_right; else bbox_side = bbox_left;
-	if (tilemap_get_at_pixel(tilemap, bbox_side+hsp, bbox_top) != 0) || 
-		(tilemap_get_at_pixel(tilemap, bbox_side+hsp, bbox_bottom) != 0) {
-		//if (hsp > 0) x = x - (x mod 16) + 15 - (bbox_right - x); 
-		//else x = x - (x mod 16) - (bbox_left - x);
-		if (hsp > 0) x = x - (x mod 48) + 47 - (bbox_right - x); 
-		else x = x - (x mod 48) - (bbox_left - x);
-		hsp = 0;
+	
+	// Collision detection
+	if (!place_meeting(x + hsp, y, tilemap)) {
+		x += hsp;
 	}
-	x += hsp;
-
-	// Vertical collision
-	if (vsp > 0) bbox_side = bbox_bottom; else bbox_side = bbox_top;
-	if (tilemap_get_at_pixel(tilemap, bbox_left, bbox_side+vsp) != 0) || 
-		(tilemap_get_at_pixel(tilemap, bbox_right, bbox_side+vsp) != 0) {
-	//	if (vsp > 0) y = y - (y mod 16) + 15 - (bbox_bottom - y);
-	//	else y = y - (y mod 16) - (bbox_top - y);
-	if (vsp > 0) y = y - (y mod 48) + 47 - (bbox_bottom - y);
-		else y = y - (y mod 48) - (bbox_top - y);
-		vsp = 0;
+	if (!place_meeting(x, y + vsp, tilemap)) {
+		y += vsp;
 	}
 
-	y += vsp;
-
-
+	// sprite assignment
 	if (hsp > 0) {
 		// move right
 		sprite_index = spr_player_walk_right;
