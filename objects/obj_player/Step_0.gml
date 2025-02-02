@@ -1,6 +1,23 @@
 if (obj_gamecontroller._STATE = states.free) {
 	var bbox_side;
 
+
+	//Interact code
+	interact = keyboard_check(ord("E"));
+	
+	if (interact) {
+		if distance_to_object(obj_balloon_box) < 10 {
+			//show_message("You are interacting with the balloon box!!");
+			//create keypad gui??
+			//god idk what the hell dis is
+			if !instance_exists(obj_keypad){
+				instance_create_layer(x, y, "Key_Pad_Instance", obj_keypad)
+			}
+		}
+	}
+
+	//Interact code end
+	
 	if (keyboard_check_released(vk_space)) {
 		var mid = bbox_bottom - (bbox_bottom - bbox_top) / 2;
 		var split = bbox_right - (bbox_right - bbox_left) / 2;
@@ -108,6 +125,7 @@ if (obj_gamecontroller._STATE = states.free) {
 		}
 	}
 }
+
 else if (obj_gamecontroller._STATE = states.interaction) {
 	//trace("haha you're trapped");
 	

@@ -1,5 +1,7 @@
-view_width = 1920/3; //1920/6;
-view_height = 1080/3; //1080/6;
+
+//modded this to zoom out cam
+view_width = 1920/2; //1920/6;
+view_height = 1080/2; //1080/6;
 
 window_scale = 3;
 
