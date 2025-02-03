@@ -9,4 +9,4 @@ _STATE = states.free;
 global.balloon_puzzle_solved = false;
 global.intro_text_spawn = false;
 
-audio_play_sound(sound_bg_music, 100, true, .5);
+audio_play_sound(sound_bg_music, 100, true, .5,0,.5);

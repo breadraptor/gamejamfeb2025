@@ -1,22 +1,30 @@
 if (obj_gamecontroller._STATE = states.free) {
 	var bbox_side;
 
-
 	//Interact code
 	interact = keyboard_check(ord("E"));
 	
 	if (interact) {
+		
 		if distance_to_object(obj_balloon_box) < 10 {
-			//show_message("You are interacting with the balloon box!!");
-			//create keypad gui??
-			//god idk what the hell dis is
+			//ensure only 1 sprite exists
 			if !instance_exists(obj_keypad){
 				instance_create_layer(x, y, "Key_Pad_Instance", obj_keypad)
 			}
-		} else {
-			obj_DialogueMaster.dialogue_id = 1;
 		}
-	}
+		if distance_to_object(obj_bookstand) < 10 {
+			//ensure only 1 sprite exists
+			if !instance_exists(obj_yearbook){
+					instance_create_layer(x, y, "Key_Pad_Instance", obj_yearbook)
+				}
+		}
+		if distance_to_object(obj_fingerjar) < 10 {
+			//ensure only 1 sprite exists
+			if !instance_exists(obj_fingerjarclose){
+					instance_create_layer(x, y, "Key_Pad_Instance", obj_fingerjarclose)
+				}
+		}
+}
 
 	//Interact code end
 	/*

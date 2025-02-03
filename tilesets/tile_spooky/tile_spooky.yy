@@ -18,8 +18,8 @@
   "resourceType":"GMTileSet",
   "resourceVersion":"2.0",
   "spriteId":{
-    "name":"spr_tile_spooky",
-    "path":"sprites/spr_tile_spooky/spr_tile_spooky.yy",
+    "name":"Tileset_48x48_14_newfloor3_DARK",
+    "path":"sprites/Tileset_48x48_14_newfloor3_DARK/Tileset_48x48_14_newfloor3_DARK.yy",
   },
   "spriteNoExport":false,
   "textureGroupId":{

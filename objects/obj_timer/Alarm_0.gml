@@ -24,5 +24,14 @@ if !(t_sec = 0 && t_min = 0 && t_mil =0){
 	alarm[0] = 6	
 }
 else{
-	game_end()	
+	/*
+	instance_create_layer(
+        0, 
+        0, 
+        "Key_Pad_Instance",     // or whichever layer name you want
+        obj_endScreen
+    );
+	*/
+	instance_create_layer(0, 0, "EndScreen", obj_endScreen);
+	//game_end()	
 }

@@ -9,7 +9,7 @@ function get_dialogue(convoId, index){
 				case 0:
 					return "Wha -- Hey, you! You shouldn't be awake...";
 				case 1:
-					return "Don't touch anything and just wait for Bozo to come back and eat you!!";
+					return "Don't touch anything and just wait for Bozo to come back!!";
 				default:
 					return "";
 			}

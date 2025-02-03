@@ -18,8 +18,8 @@
   "resourceType":"GMTileSet",
   "resourceVersion":"2.0",
   "spriteId":{
-    "name":"spr_birthday_set",
-    "path":"sprites/spr_birthday_set/spr_birthday_set.yy",
+    "name":"_10_Birthday_party_48x48_new",
+    "path":"sprites/_10_Birthday_party_48x48_new/_10_Birthday_party_48x48_new.yy",
   },
   "spriteNoExport":false,
   "textureGroupId":{
@@ -34,5 +34,5 @@
   "tileWidth":48,
   "tilexoff":0,
   "tileyoff":0,
-  "tile_count":60,
+  "tile_count":72,
 }

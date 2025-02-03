@@ -1,7 +1,7 @@
 /// @description Set-Up
 
-t_min = 2
-t_sec = 0 
+t_min = 0
+t_sec = 10 
 t_mil = 0
 
 //start timer
