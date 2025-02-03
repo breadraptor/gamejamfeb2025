@@ -10,16 +10,26 @@ var kp_y = gui_h * 0.5;
 
 if ( global.balloon_puzzle_solved ) {
 	draw_sprite_ext(
-	balloon_box_green, //sprite
-	0, //Sub image?
-	kp_x, //Center X
-	kp_y,  //Center Y
-	3,  //Horizontal Scale
-	3, //Vertical Scale
-	0, // Rotation
-	c_white, //Color Tint
-	1 //Alpha
-);
+		balloon_box_green, //sprite
+		0, //Sub image?
+		kp_x, //Center X
+		kp_y,  //Center Y
+		3,  //Horizontal Scale
+		3, //Vertical Scale
+		0, // Rotation
+		c_white, //Color Tint
+		1 //Alpha
+	);
+
+	draw_set_halign(fa_left ); //text centered along X-coordinate
+	draw_set_valign(fa_middle); //Text centered along Y-coordinate
+
+	draw_set_font(pxl_font_lg)
+
+	//cringe adhoc adjusting digits
+	start_x = kp_x + -450; 
+	start_y = kp_y + 50;
+	draw_text(start_x,start_y, correct_code );
 }
 else {
 	draw_sprite_ext(

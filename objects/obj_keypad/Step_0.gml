@@ -28,7 +28,7 @@ if (!global.balloon_puzzle_solved){
 				box_inst.sprite_index = balloonbox_sprite_green;
 			}
 			
-			
+			obj_DialogueMaster.dialogue_id = 2;
 			global.balloon_puzzle_solved = true;
 			//destory key pad gui
 			instance_destroy();

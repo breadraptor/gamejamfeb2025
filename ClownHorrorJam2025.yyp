@@ -54,6 +54,7 @@
     {"id":{"name":"create_text","path":"scripts/create_text/create_text.yy",},},
     {"id":{"name":"get_dialogue","path":"scripts/get_dialogue/get_dialogue.yy",},},
     {"id":{"name":"trace","path":"scripts/trace/trace.yy",},},
+    {"id":{"name":"sound_bg_music","path":"sounds/sound_bg_music/sound_bg_music.yy",},},
     {"id":{"name":"balloon_box_green","path":"sprites/balloon_box_green/balloon_box_green.yy",},},
     {"id":{"name":"balloon_box_red","path":"sprites/balloon_box_red/balloon_box_red.yy",},},
     {"id":{"name":"balloonbox_sprite_green","path":"sprites/balloonbox_sprite_green/balloonbox_sprite_green.yy",},},

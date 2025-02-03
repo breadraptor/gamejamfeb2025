@@ -14,5 +14,5 @@ var bottom_center_x = cam_x + (cam_w / 2);
 // Offset by 10 pixels from the bottom (change as needed)
 var bottom_center_y = cam_y + cam_h - 10;
 
-draw_sprite_ext(spr_doll_dialogue, image_index, x, y, 2, 2, image_angle, image_blend, image_alpha);
+draw_sprite_ext(spr_doll_dialogue, image_index, x, y, 3, 3, image_angle, image_blend, image_alpha);
 

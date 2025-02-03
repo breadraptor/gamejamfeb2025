@@ -2,6 +2,12 @@
 
 t_mil -= 1
 
+// handle text events
+if (t_min < 2 && t_sec < 55 && !global.intro_text_spawn) {
+	obj_DialogueMaster.dialogue_id = 1;
+	global.intro_text_spawn = true;
+}
+
 if t_mil = -1{ //reduced seconds by one
 	t_mil = 9
 	t_sec -= 1
